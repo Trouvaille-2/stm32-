@@ -30,6 +30,7 @@
 .\objects\main.o: .\Library\misc.h
 .\objects\main.o: .\System\Delay.h
 .\objects\main.o: .\tough\OLED.h
+.\objects\main.o: .\tough\LED.h
 .\objects\main.o: .\tough\Serial.h
 .\objects\main.o: D:\Kali5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\main.o: .\tough\Key.h
+.\objects\main.o: D:\Kali5\ARM\ARMCC\Bin\..\include\String.h

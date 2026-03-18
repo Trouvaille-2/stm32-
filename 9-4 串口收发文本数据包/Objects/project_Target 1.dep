@@ -748,7 +748,7 @@ I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 F (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)()
-F (.\User\main.c)(0x69B40CEB)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\tough --no-multibyte-chars-I.\RTE\_Target_1-ID:\Kali5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Kali5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\User\main.c)(0x69B55EAF)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\tough --no-multibyte-chars-I.\RTE\_Target_1-ID:\Kali5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Kali5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
 I (D:\Kali5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -779,9 +779,10 @@ I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 I (.\System\Delay.h)(0x6130920D)
 I (.\tough\OLED.h)(0x616ED05A)
-I (.\tough\Serial.h)(0x69B40735)
+I (.\tough\LED.h)(0x696CA4C9)
+I (.\tough\Serial.h)(0x69B55A4B)
 I (D:\Kali5\ARM\ARMCC\include\stdio.h)(0x588B8344)
-I (.\tough\Key.h)(0x696CE39A)
+I (D:\Kali5\ARM\ARMCC\include\String.h)(0x588B8344)
 F (.\User\stm32f10x_conf.h)(0x4D99A59E)()
 F (.\User\stm32f10x_it.c)(0x4D99A59E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\tough --no-multibyte-chars-I.\RTE\_Target_1-ID:\Kali5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Kali5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_it.o --omf_browse .\objects\stm32f10x_it.crf --depend .\objects\stm32f10x_it.d)
 I (User\stm32f10x_it.h)(0x4D99A59E)
@@ -1056,7 +1057,7 @@ I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 F (.\tough\Encoder.h)(0x699EBA97)()
-F (.\tough\Serial.c)(0x69B40C85)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\tough --no-multibyte-chars-I.\RTE\_Target_1-ID:\Kali5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Kali5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\serial.o --omf_browse .\objects\serial.crf --depend .\objects\serial.d)
+F (.\tough\Serial.c)(0x69B55ACE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\tough --no-multibyte-chars-I.\RTE\_Target_1-ID:\Kali5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Kali5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\serial.o --omf_browse .\objects\serial.crf --depend .\objects\serial.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
 I (D:\Kali5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -1087,4 +1088,4 @@ I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 I (D:\Kali5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\Kali5\ARM\ARMCC\include\stdarg.h)(0x588B8344)
-F (.\tough\Serial.h)(0x69B40735)()
+F (.\tough\Serial.h)(0x69B55A4B)()

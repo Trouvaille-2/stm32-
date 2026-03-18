@@ -3,8 +3,7 @@
 #include <stdarg.h>
 
 
-uint8_t Serial_TxPacket[4];
-uint8_t Serial_RxPacket[4];
+char Serial_RxPacket[100];
 uint8_t Serial_RxFlag;
 
 void Serial_Init()
@@ -117,23 +116,7 @@ void Serial_Printf(char *format, ...)
 		Serial_SendString(String);
 }
 
-void Serial_SendPacket(void)
-{
-	Serial_SendByte(0xFF);
-	Serial_SendArray(Serial_TxPacket,4);
-	Serial_SendByte(0xFE);
-	
-}
 
-uint8_t Serial_GetRxFlag(void)
-{
-	if(Serial_RxFlag == 1)
-	{
-		Serial_RxFlag=0;
-		return 1;
-	}
-	return 0;
-}
 
 
 
@@ -147,26 +130,33 @@ void USART1_IRQHandler(void)
 		
 		if(RxState ==0)
 		{
-			if(RxData==0xFF)
+			if(RxData=='@'  && Serial_RxFlag==0)
 			{
 				RxState=1;
+				pRxPacket=0;
 			}
 		}
 		else if(RxState==1)
 		{
-			Serial_RxPacket[pRxPacket]=RxData;
-			pRxPacket ++;
-			if(pRxPacket>=4)
+			if(RxData=='\r')
 			{
 				RxState=2;
+			}
+			else
+			{
+				Serial_RxPacket[pRxPacket]=RxData;
+				pRxPacket ++;
+				
 			}
 			
 		}
 		else if(RxState==2)
 		{
-			if(RxData==0xFE)
+			if(RxData=='\n')
 			{
 				RxState=0;
+			Serial_RxPacket[pRxPacket]='\0';
+
 				Serial_RxFlag=1;
 			}
 		}
