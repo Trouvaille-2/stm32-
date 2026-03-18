@@ -761,16 +761,6 @@
               <FilePath>.\tough\Encoder.h</FilePath>
             </File>
             <File>
-              <FileName>MyI2C.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\tough\MyI2C.c</FilePath>
-            </File>
-            <File>
-              <FileName>MyI2C.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\tough\MyI2C.h</FilePath>
-            </File>
-            <File>
               <FileName>MPU6050.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\tough\MPU6050.c</FilePath>

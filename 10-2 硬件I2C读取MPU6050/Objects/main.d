@@ -30,5 +30,4 @@
 .\objects\main.o: .\Library\misc.h
 .\objects\main.o: .\System\Delay.h
 .\objects\main.o: .\tough\OLED.h
-.\objects\main.o: .\tough\MyI2C.h
 .\objects\main.o: .\tough\MPU6050.h
