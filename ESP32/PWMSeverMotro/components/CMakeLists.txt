@@ -4,7 +4,9 @@ idf_component_register(
         "LCD/lcd.c"
         "LED/LED.c"
         "SPI/spi.c"
-        "GPTM/gptim.c"
+        "MOTOR/motor.c"
+        "KEY/key.c"
+        "PWM/pwm.c"
 
     # 把所有子目录都加入头文件搜索路径
     INCLUDE_DIRS
@@ -12,8 +14,11 @@ idf_component_register(
         "LCD"
         "LED"
         "SPI"
+        "MOTOR"
+        "KEY"
+        "PWM"
 
-    REQUIRES driver esp_timer
+    REQUIRES driver
 )
 
 # 编译优化选项（可选）

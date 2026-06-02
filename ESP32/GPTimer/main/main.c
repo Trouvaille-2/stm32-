@@ -3,20 +3,27 @@
 #include "freertos/task.h"
 #include "driver/gpio.h"
 #include "lcd.h"
+#include "GPTM/gptim.h"
+#include "led.h"
 
 
 
 void app_main(void)
 {
+    uint8_t lcd_cnt = 0;
     lcd_init(); 
-    lcd_clear(BLACK);
-    lcd_show_char(1,1,'A',RED,BLACK);
-    lcd_show_string(2,1,"Hello, ESP32!",GREEN,BLACK);
-    lcd_show_num(3,1,12345678,8,YELLOW,BLACK);
-    lcd_show_hexnum(4,1,0x1234,4,BROWN,BLACK);
-    lcd_show_float(5,1,3.14159,2,CYAN,BLACK);
+    led_init();
+    gptim_init();
+    lcd_show_string(1,1,"CNT:",GREEN,BLACK);
     while(1)
     {
-        vTaskDelay(500);
+        if(flag_timer == 1)
+        {
+            lcd_cnt++;
+            lcd_show_num(1,5,lcd_cnt,3,GREEN,BLACK);
+            gpio_toggle(GPIO_NUM_38);
+            flag_timer = 0;
+        }
+        vTaskDelay(1);
     }
 }

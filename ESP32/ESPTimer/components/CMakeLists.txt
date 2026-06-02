@@ -4,14 +4,14 @@ idf_component_register(
         "LCD/lcd.c"
         "LED/LED.c"
         "SPI/spi.c"
-        "GPTM/gptim.c"
-
+        "ESPTimer/esptim.c"
     # 把所有子目录都加入头文件搜索路径
     INCLUDE_DIRS
         "."
         "LCD"
         "LED"
         "SPI"
+        "ESPTimer"
 
     REQUIRES driver esp_timer
 )
