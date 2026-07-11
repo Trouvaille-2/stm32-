@@ -1,0 +1,25 @@
+# ESP-IDF 构建输出
+build/
+sdkconfig
+sdkconfig.old
+
+# IDE 配置
+.vscode/
+.idea/
+
+# 编译产物
+*.o
+*.elf
+*.bin
+*.map
+*.hex
+
+# 系统文件
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log

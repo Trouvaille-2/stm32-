@@ -1,0 +1,3 @@
+[submodule "ov2046/components/esp32-camera"]
+	path = ov2046/components/esp32-camera
+	url = https://github.com/espressif/esp32-camera.git
